@@ -1,0 +1,218 @@
+
+html, body {
+  width  : 100%;
+  height : 100%;
+}
+
+body {
+  background-color : @background-color;
+  font-family      : "Open Sans", serif, sans-serif sans-serif;
+  font-size        : 11pt;
+}
+
+h1 {
+  font-size : 20pt;
+}
+
+h2 {
+  font-size : 18pt;
+}
+
+h3 {
+  font-size : 16pt;
+}
+
+h4 {
+  font-size : 14pt;
+}
+
+.browsehappy {
+  margin     : 0.2em 0;
+  background : #CCCCCC;
+  color      : #000000;
+  padding    : 0.2em 0;
+}
+
+// Helpers -------------------------------------------------------------------------------------------------------------
+
+.full {
+  height : 100% !important;
+  width  : 100% !important;
+}
+
+.full-width {
+  width : 100% !important;
+}
+
+.no-border {
+  border : none !important;
+}
+
+.no-padding {
+  padding : 0 !important;
+}
+
+.no-margin {
+  margin : 0 !important;
+}
+
+.cover {
+  background-size         : cover;
+  -moz-background-size    : cover;
+  -o-background-size      : cover;
+  -webkit-background-size : cover;
+  display                 : table;
+  height                  : 100%;
+  position                : relative;
+  width                   : 100%;
+}
+
+.slow {
+  -moz-animation-duration    : 2s;
+  -o-animation-duration      : 2s;
+  animation-duration         : 2s;
+  -webkit-animation-duration : 2s;
+}
+
+.delay1 {
+  -moz-animation-delay    : 1s;
+  -o-animation-delay      : 1s;
+  -webkit-animation-delay : 1s;
+  animation-delay         : 1s;
+}
+
+.delay2 {
+  -moz-animation-delay    : 2s;
+  -o-animation-delay      : 2s;
+  -webkit-animation-delay : 2s;
+  animation-delay         : 2s;
+}
+
+.round-border {
+  -webkit-border-radius : 250px;
+  -moz-border-radius    : 250px;
+  border-radius         : 250px;
+}
+
+// NavBar --------------------------------------------------------------------------------------------------------------
+
+/* navbar */
+.navbar-codvio {
+  //background-color : rgba(255, 255, 255, 0.3);
+  //background-color : #6FB7E9;
+  background-color : #252525;
+  border-bottom    : 1px solid #FFFFFF;
+}
+
+/* title */
+.navbar-codvio .navbar-brand {
+  color : #777777;
+}
+
+.navbar-codvio .navbar-brand:hover,
+.navbar-codvio .navbar-brand:focus {
+  color : #5E5E5E;
+}
+
+/* paragraph */
+.navbar-codvio .navbar-text > a {
+  color : #252525;
+}
+
+.navbar-codvio .navbar-text > a:hover,
+.navbar-codvio .navbar-text > a:focus {
+  color : #FFFFFF;
+}
+
+/* link */
+.navbar-codvio .navbar-nav > li > a {
+  color : #DEDEDE;
+}
+
+.navbar-codvio .navbar-nav > li > a:hover,
+.navbar-codvio .navbar-nav > li > a:focus {
+  color            : #DEDEDE;
+  background-color : #878787;
+}
+
+.navbar-codvio .navbar-nav > li > a.active,
+.navbar-codvio .navbar-nav > li > a.active:hover,
+.navbar-codvio .navbar-nav > li > a.active:focus {
+  color            : #DEDEDE;
+  background-color : #676767;
+}
+
+.navbar-codvio .navbar-nav > .open > a,
+.navbar-codvio .navbar-nav > .open > a:hover,
+.navbar-codvio .navbar-nav > .open > a:focus {
+  color            : #555555;
+  background-color : #D5D5D5;
+}
+
+/* caret */
+.navbar-codvio .navbar-nav > .dropdown > a .caret {
+  border-top-color    : #777777;
+  border-bottom-color : #777777;
+}
+
+.navbar-codvio .navbar-nav > .dropdown > a:hover .caret,
+.navbar-codvio .navbar-nav > .dropdown > a:focus .caret {
+  border-top-color    : #333333;
+  border-bottom-color : #333333;
+}
+
+.navbar-codvio .navbar-nav > .open > a .caret,
+.navbar-codvio .navbar-nav > .open > a:hover .caret,
+.navbar-codvio .navbar-nav > .open > a:focus .caret {
+  border-top-color    : #555555;
+  border-bottom-color : #555555;
+}
+
+/* mobile version */
+.navbar-codvio .navbar-toggle {
+  border-color : #DDDDDD;
+}
+
+.navbar-codvio .navbar-toggle:hover,
+.navbar-codvio .navbar-toggle:focus {
+  background-color : #DDDDDD;
+}
+
+.navbar-codvio .navbar-toggle .icon-bar {
+  background-color : #CCCCCC;
+}
+
+@media (max-width : 767px) {
+  .navbar-codvio .navbar-nav .open .dropdown-menu > li > a {
+    color : #777777;
+  }
+
+  .navbar-codvio .navbar-nav .open .dropdown-menu > li > a:hover,
+  .navbar-codvio .navbar-nav .open .dropdown-menu > li > a:focus {
+    color : #333333;
+  }
+}
+
+// Pace ----------------------------------------------------------------------------------------------------------------
+
+.pace {
+  -webkit-pointer-events : none;
+  pointer-events         : none;
+  -webkit-user-select    : none;
+  -moz-user-select       : none;
+  user-select            : none;
+}
+
+.pace-inactive {
+  display : none;
+}
+
+.pace .pace-progress {
+  background : #E30069;
+  position   : fixed;
+  z-index    : 2000;
+  top        : 0;
+  right      : 100%;
+  width      : 100%;
+  height     : 2px;
+}

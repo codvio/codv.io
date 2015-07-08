@@ -1,0 +1,38 @@
+<header class="contact">
+  <div class="container contact-container" ng-controller="ContactCtrl">
+    <div class="row">
+      <div class="col-sm-5 contact-info-container">
+        <a href="https://codv.io/"><img alt="CODVIO YAZILIM BİLİŞİM EĞİTİM DANIŞMANLIK ELEKTRONİK TİC. LTD. ŞTİ." src="images/codvio-logo.png"></a>
+        <h1>CODVIO YAZILIM BİLİŞİM EĞİTİM DANIŞMANLIK ELEKTRONİK TİC. LTD. ŞTİ.</h1>
+        <address>OSMAN AĞA MAH. SÖĞÜTLÜ ÇEŞME CAD. NO: 64 / 96<br>34710 KADIKÖY / İSTANBUL</address>
+        <div><i class="address-info fa fa-phone"></i> &nbsp; +90 216 330 55 11</div>
+        <div><i class="address-info fa fa-envelope"></i> &nbsp; <img alt="codvio mail" src="images/mail.png"></div>
+        <div class="text-right">
+          <a class="btn btn-social-icon btn-twitter" href="https://twitter.com/codviosoft" target="_blank">
+            <i class="fa fa-twitter"></i>
+          </a>
+          <a class="btn btn-social-icon btn-github" href="https://github.com/codvio" target="_blank">
+            <i class="fa fa-github"></i>
+          </a>
+          <a class="btn btn-social-icon btn-facebook" href="https://facebook.com/codvio" target="_blank">
+            <i class="fa fa-facebook"></i>
+          </a>
+          <a class="btn btn-social-icon btn-google" href="https://plus.google.com/+codvio" target="_blank">
+            <i class="fa fa-google-plus"></i>
+          </a>
+          <a class="btn btn-social-icon btn-linkedin" href="https://linkedin.com/company/codvio" target="_blank">
+            <i class="fa fa-linkedin"></i>
+          </a>
+        </div>
+      </div>
+      <div class="col-sm-7 map-container">
+        <ui-gmap-google-map center="map.mapCenter" zoom="map.zoom">
+          <ui-gmap-marker idKey='1' coords="map.center" click="showInfoWindow()"></ui-gmap-marker>
+          <ui-gmap-window coords="map.center" show="true" options="map.options" control="map.windowControl">
+            <div><b>CODVIO</b><br/>OSMAN AĞA MAH. SÖĞÜTLÜ ÇEŞME CAD. NO: 64/96<br/>34710 İSTANBUL</div>
+          </ui-gmap-window>
+        </ui-gmap-google-map>
+      </div>
+    </div>
+  </div>
+</header>
