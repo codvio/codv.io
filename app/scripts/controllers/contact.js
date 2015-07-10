@@ -40,9 +40,9 @@ function contactController($scope) {
 
 /**
  * @ngdoc function
- * @name codvioApp.controller:LoginCtrl
+ * @name codvioApp.controller:ContactCtrl
  * @description
- * # LoginCtrl
+ * # ContactCtrl
  * Controller of the codvioApp
  */
 angular
