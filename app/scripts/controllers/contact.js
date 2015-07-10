@@ -20,7 +20,7 @@ function contactController($scope) {
       'latitude' : 40.99066207504869,
       'longitude': 29.027822439070178
     },
-    'zoom'         : 20,
+    'zoom'         : 15,
     'options'      : {
       'pixelOffset': {
         'width' : 0,
