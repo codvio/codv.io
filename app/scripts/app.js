@@ -7,7 +7,7 @@
 
 // #####################################################################################################################
 
-function onModuleStart($rootScope, $state, $location, anchorSmoothScroll, $anchorScroll) {
+function onModuleStart($rootScope, $state, $location, anchorSmoothScroll) {
 
   $rootScope.$state = $state;
 
@@ -16,8 +16,7 @@ function onModuleStart($rootScope, $state, $location, anchorSmoothScroll, $ancho
     $location.hash(eID);
 
     // call $anchorScroll()
-    //anchorSmoothScroll.scrollTo(eID);
-    $anchorScroll(eID);
+    anchorSmoothScroll.scrollTo(eID);
   };
 }
 
