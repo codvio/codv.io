@@ -7,7 +7,7 @@
 
 // #####################################################################################################################
 
-function onModuleStart($rootScope, $state, $location, anchorSmoothScroll) {
+function onModuleStart($rootScope, $state, $location, anchorSmoothScroll, $anchorScroll) {
 
   $rootScope.$state = $state;
 
@@ -16,7 +16,8 @@ function onModuleStart($rootScope, $state, $location, anchorSmoothScroll) {
     $location.hash(eID);
 
     // call $anchorScroll()
-    anchorSmoothScroll.scrollTo(eID);
+    //anchorSmoothScroll.scrollTo(eID);
+    $anchorScroll(eID);
   };
 }
 
@@ -56,46 +57,10 @@ function config($stateProvider, $urlRouterProvider, $locationProvider) {
       'templateUrl': 'views/tr/services.html',
       'data'       : {pageTitle: 'Hizmetler'}
     })
-    .state('tr.services.os', {
-      'url'        : '/acik_kaynak',
-      'templateUrl': 'views/tr/services.html'
-    })
-    .state('tr.services.web', {
-      'url'        : '/web_teknolojileri',
-      'templateUrl': 'views/tr/services.html'
-    })
-    .state('tr.services.cloud', {
-      'url'        : '/bulut_bilisim',
-      'templateUrl': 'views/tr/services.html'
-    })
-    .state('tr.services.iot', {
-      'url'        : '/seylerin_interneti',
-      'templateUrl': 'views/tr/services.html'
-    })
-    .state('tr.services.linux', {
-      'url'        : '/linux',
-      'templateUrl': 'views/tr/services.html'
-    })
-    .state('tr.services.edu', {
-      'url'        : '/egitim_danismanlik',
-      'templateUrl': 'views/tr/services.html'
-    })
     .state('tr.works', {
       'url'        : '/calismalar',
       'templateUrl': 'views/tr/works.html',
       'data'       : {pageTitle: 'Çalışmalar'}
-    })
-    .state('tr.works.bulutkare', {
-      'url'        : '/bulutkare',
-      'templateUrl': 'views/tr/works.html'
-    })
-    .state('tr.works.ilactakip', {
-      'url'        : '/ilactakip',
-      'templateUrl': 'views/tr/works.html'
-    })
-    .state('tr.works.eteshis', {
-      'url'        : '/eteshis',
-      'templateUrl': 'views/tr/works.html'
     })
     .state('tr.contact', {
       'url'        : '/iletisim',
@@ -116,46 +81,10 @@ function config($stateProvider, $urlRouterProvider, $locationProvider) {
       'templateUrl': 'views/en/services.html',
       'data'       : {pageTitle: 'Services'}
     })
-    .state('en.services.os', {
-      'url'        : '/open_source',
-      'templateUrl': 'views/en/services.html'
-    })
-    .state('en.services.web', {
-      'url'        : '/web_technologies',
-      'templateUrl': 'views/en/services.html'
-    })
-    .state('en.services.cloud', {
-      'url'        : '/cloud_computing',
-      'templateUrl': 'views/en/services.html'
-    })
-    .state('en.services.iot', {
-      'url'        : '/internet_of_things',
-      'templateUrl': 'views/en/services.html'
-    })
-    .state('en.services.linux', {
-      'url'        : '/linux',
-      'templateUrl': 'views/en/services.html'
-    })
-    .state('en.services.edu', {
-      'url'        : '/education_consultancy',
-      'templateUrl': 'views/en/services.html'
-    })
     .state('en.works', {
       'url'        : '/works',
       'templateUrl': 'views/en/works.html',
       'data'       : {pageTitle: 'Works'}
-    })
-    .state('en.works.bulutkare', {
-      'url'        : '/bulutkare',
-      'templateUrl': 'views/en/works.html'
-    })
-    .state('en.works.ilactakip', {
-      'url'        : '/ilactakip',
-      'templateUrl': 'views/en/works.html'
-    })
-    .state('en.works.eteshis', {
-      'url'        : '/eteshis',
-      'templateUrl': 'views/en/works.html'
     })
     .state('en.contact', {
       'url'        : '/contact',
