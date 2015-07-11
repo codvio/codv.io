@@ -68,30 +68,40 @@ h4 {
 }
 
 .slow {
+  animation-duration         : 2s;
   -moz-animation-duration    : 2s;
   -o-animation-duration      : 2s;
-  animation-duration         : 2s;
   -webkit-animation-duration : 2s;
 }
 
 .delay1 {
+  animation-delay         : 1s;
   -moz-animation-delay    : 1s;
   -o-animation-delay      : 1s;
   -webkit-animation-delay : 1s;
-  animation-delay         : 1s;
 }
 
 .delay2 {
+  animation-delay         : 2s;
   -moz-animation-delay    : 2s;
   -o-animation-delay      : 2s;
   -webkit-animation-delay : 2s;
-  animation-delay         : 2s;
+}
+
+.delay3 {
+  animation-delay         : 3s;
+  -moz-animation-delay    : 3s;
+  -o-animation-delay      : 3s;
+  -webkit-animation-delay : 3s;
 }
 
 .round-border {
-  -webkit-border-radius : 250px;
-  -moz-border-radius    : 250px;
   border-radius         : 250px;
+  -moz-border-radius    : 250px;
+  -webkit-border-radius : 250px;
+  box-shadow            : 1px 1px 5px 0 rgba(0, 0, 0, 0.75);
+  -moz-box-shadow       : 1px 1px 5px 0 rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow    : 1px 1px 5px 0 rgba(0, 0, 0, 0.75);
 }
 
 .btn-down-container {
@@ -239,4 +249,17 @@ h4 {
   right      : 100%;
   width      : 100%;
   height     : 2px;
+}
+
+// Sections ------------------------------------------------------------------------------------------------------------
+
+section h1, section h2 {
+  font-family : "Kaushan Script", "Open Sans", serif, sans-serif;
+  text-shadow : 1px 1px 2px rgba(150, 150, 150, 0.7);
+}
+
+section p, section li {
+  font-family : "Shadows Into Light Two", "Open Sans", serif, sans-serif;
+  font-size   : 125%;
+  text-shadow : 1px 1px 2px rgba(150, 150, 150, 0.7);
 }
